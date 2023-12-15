@@ -1,4 +1,6 @@
 import React from "react";
+import Link from 'next/link';
+import './globals.css';
 
 export const metadata = {
   title: 'Next.js',
@@ -12,7 +14,18 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <head>
+        {/* Other head elements go here */}
+      </head>
+      <body>
+        <nav>
+          <Link href="/notes">
+            Notes
+          </Link>
+          {/* Other nav elements go here */}
+        </nav>
+        {children}
+      </body>
     </html>
   )
 }
