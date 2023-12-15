@@ -15,11 +15,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <title></title>
         {/* Other head elements go here */}
       </head>
       <body>
         <nav>
-          <Link href="/notes">
+          <Link href={"/notes"}>
             Notes
           </Link>
           {/* Other nav elements go here */}
